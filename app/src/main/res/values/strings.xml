@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Shared Preferences</string>
+    <string name="second_activity">Second Activity!</string>
+    <string name="save">Save!</string>
+    <string name="write_here">Write here!</string>
 </resources>

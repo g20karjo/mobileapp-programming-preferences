@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        myPreferenceRef = getSharedPreferences("Name", MODE_PRIVATE);
-        myPreferenceRef = getPreferences(MODE_PRIVATE);
+        myPreferenceRef = getSharedPreferences("123", MODE_PRIVATE);
+       // myPreferenceRef = getPreferences(MODE_PRIVATE);
         myPreferenceEditor = myPreferenceRef.edit();
 
         prefTextRef=findViewById(R.id.prefText);
-        prefTextRef.setText(myPreferenceRef.getString("MyAppPreferenceString",""));
+        prefTextRef.setText(myPreferenceRef.getString("123","tomt"));
 
         Button button =(Button)findViewById(R.id.secondActivityButton);
         button.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         prefTextRef=findViewById(R.id.prefText);
-        prefTextRef.setText(myPreferenceRef.getString("MyAppPreferenceString",""));
+        prefTextRef.setText(myPreferenceRef.getString("123","tomt"));
     }
 }
